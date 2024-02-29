@@ -1,0 +1,113 @@
+body {
+  background-color: #121212;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+}
+
+.champ-card {
+  transition: transform 0.5s;
+  border: none;
+  border-radius: 10%;
+  height: 100%;
+  width: 40%;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.champ-card-skins {
+  transition: transform 0.5s;
+  border: none;
+  border-radius: 10%;
+  height: 100%;
+  width: 40%;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.champ-card-spells {
+  transition: transform 0.5s;
+  border: none;
+  border-radius: 10%;
+  height: 100%;
+  width: 40%;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.champ-card-passive {
+  transition: transform 0.5s;
+  border: none;
+  border-radius: 10%;
+  background: transparent;
+  border-radius: 15px;
+}
+
+.champ-header {
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.champ-tips {
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.champ-image {
+  border-radius: 10%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.champ-body {
+  background-color: #ffffff;
+  padding: 0;
+  color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.champ-image:hover {
+  transform: rotateY(360deg);
+}
+
+.champ-card:hover,
+.champ-card-skins:hover,
+.champ-card-spells:hover,
+.champ-card-passive:hover {
+  transform: scale(1.05);
+}
+
+.active:hover {
+  animation: mexendoLetras 1.5s infinite;
+}
+
+@keyframes mexendoLetras {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .champ-card {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) AND (max-width: 1115px) {
+  .btn_spells,
+  .btn_skins {
+    display: none;
+  }
+}

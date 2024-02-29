@@ -1,0 +1,84 @@
+body {
+  background-color: #121212;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+}
+
+.champ-card {
+  transition: transform 0.5s;
+  border: none;
+  border-radius: 15px;
+}
+
+.champ-header {
+  background-color: #007bff;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.champ-body {
+  background-color: #ffffff;
+  padding: 0;
+  color: #343a40;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.champ-image {
+  border-radius: 10%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-title {
+  font-weight: bold;
+  color: black;
+  padding: 5px;
+  margin: 0;
+}
+
+.champ-image:hover {
+  transform: rotateY(360deg);
+}
+
+.champ-card:hover {
+  transform: scale(1.05);
+}
+
+.active:hover {
+  animation: mexendoLetras 1.5s infinite;
+}
+
+@keyframes mexendoLetras {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1115px) {
+  .card-title {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) AND (max-width: 1115px) {
+  .btn_detalhes {
+    display: none;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+}
