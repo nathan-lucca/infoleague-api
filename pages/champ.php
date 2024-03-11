@@ -93,7 +93,7 @@ if ($result !== false) {
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.php">
-                <img src="https://logosmarcas.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png" height="100" class="d-inline-block align-top">
+                <img src="../img/infoleague.png" height="100" class="d-inline-block align-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -402,6 +402,23 @@ if ($result !== false) {
             </div>
         </div>
     </div>
+
+    <footer class="mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center text-light">
+                    <hr>
+                    <p>Desenvolvido com ❤️ por Nathan Lucca Covre</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/nathan-lucca-covre-358078266/" target="_blank">LinkedIn</a> |
+                        <a href="https://github.com/nathan-lucca/" target="_blank">GitHub</a> |
+                        <a href="https://www.instagram.com/ofc_nathan_lucca/" target="_blank">Instagram</a>
+                    </p>
+                    <p>Copyright © 2024 Nathan Lucca Covre</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

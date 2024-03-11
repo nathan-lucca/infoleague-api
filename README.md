@@ -13,6 +13,12 @@ No site, você pode:
 - **Ver estatísticas de um campeão específico**: Quer saber como um campeão se sai em várias partidas? Este recurso fornece estatísticas detalhadas para cada campeão.
 - **Ver skins de um campeão específico**: Quer ver todas as skins disponíveis para um campeão? Este recurso permite que você faça isso.
 
+## 🌐 Site do Projeto
+
+Este projeto já está em funcionamento e você pode conferir o resultado final no InfoLeague. Este site é um exemplo do que você pode criar com este projeto.
+
+Clique <a href="http://infoleague.infinityfreeapp.com/index.php" target="_blank">aqui</a> para ser redirecionado para o site **Info League**.
+
 ## Para quem é este projeto? 👥
 
 Este projeto é voltado para a comunidade de gamers e fãs do League Of Legends. Se você joga o jogo, ou simplesmente gosta de acompanhar as novidades, este projeto é para você!
@@ -30,3 +36,9 @@ Se você tiver alguma dúvida, sugestão ou feedback, sinta-se à vontade para e
 Gostaria de agradecer a todos que me apoiaram neste projeto. A todos os jogadores e fãs do League Of Legends, obrigado por fazerem parte desta incrível comunidade. E, claro, um grande obrigado à Riot Games por criar este jogo incrível.
 
 Espero que você goste de usar este projeto tanto quanto eu gostei de criá-lo. Boa sorte nas rotas!
+
+## 📸 Imagens Demonstrativas
+
+Aqui você encontrará algumas imagens demonstrativas do projeto em funcionamento.<br><br>
+![alt text](https://media.discordapp.net/attachments/1086113858369896478/1216752075535548528/image.png?ex=660187ac&is=65ef12ac&hm=89ae4031f297f0253dcf97f144806ab7ebc89683ab8679b09ec8515984a8132c&=&format=webp&quality=lossless&width=1375&height=662 "Página Inicial")
+![alt text](https://media.discordapp.net/attachments/1086113858369896478/1216752076017766430/image.png?ex=660187ad&is=65ef12ad&hm=fa6dcddd576c06688adba425c001534c973673f3d81d83cde2a52054f4370bec&=&format=webp&quality=lossless&width=1375&height=662 "Página 'Info Campeão'")
