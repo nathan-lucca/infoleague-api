@@ -1,5 +1,5 @@
 <?php
-$ch = curl_init('https://ddragon.leagueoflegends.com/cdn/14.4.1/data/pt_BR/champion.json');
+$ch = curl_init('https://ddragon.leagueoflegends.com/cdn/14.18.1/data/pt_BR/champion.json');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
@@ -50,7 +50,7 @@ $json = json_decode($result, true);
                 $champ_id = $champ['id'];
                 $champ_name = $champ['name'];
                 $champ_title = $champ['title'];
-                $champ_image = 'https://ddragon.leagueoflegends.com/cdn/14.4.1/img/champion/' . $champ['image']['full'];
+                $champ_image = 'https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/' . $champ['image']['full'];
                 $champ_loading = 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/' . $champ_name . '_0.jpg';
                 $champ_tags = implode(", ", $champ['tags']);
             ?>

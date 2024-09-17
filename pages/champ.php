@@ -1,7 +1,7 @@
 <?php
 $champ_id = $_GET['champ_name'];
 
-$ch = curl_init('https://ddragon.leagueoflegends.com/cdn/14.4.1/data/pt_BR/champion/' . $champ_id . '.json');
+$ch = curl_init('https://ddragon.leagueoflegends.com/cdn/14.18.1/data/pt_BR/champion/' . $champ_id . '.json');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
@@ -15,7 +15,7 @@ if ($result !== false) {
             $champ_id = $champ['id'];
             $champ_name = $champ['name'];
             $champ_title = $champ['title'];
-            $champ_image = 'https://ddragon.leagueoflegends.com/cdn/14.4.1/img/champion/' . $champ['image']['full'];
+            $champ_image = 'https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/' . $champ['image']['full'];
             $champ_loading = 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/' . $champ_name . '_0.jpg';
             $champ_tags = implode(", ", $champ['tags']);
             $champ_history = $champ['lore'];
@@ -64,7 +64,7 @@ if ($result !== false) {
             // Passiva
             $champ_passive_name = $champ['passive']['name'];
             $champ_passive_description = $champ['passive']['description'];
-            $champ_passive_image = 'https://ddragon.leagueoflegends.com/cdn/14.4.1/img/passive/' . $champ['passive']['image']['full'];
+            $champ_passive_image = 'https://ddragon.leagueoflegends.com/cdn/14.18.1/img/passive/' . $champ['passive']['image']['full'];
         }
     } else {
         echo "Campeão não encontrado!";
@@ -296,10 +296,10 @@ if ($result !== false) {
 
         <div class="row mt-3 justify-content-center">
             <div class="col-md-2 mb-4">
-                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_0['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_0['name']; ?>" data-description-spell="<?php echo $champ_spell_0['description']; ?>">
+                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_0['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_0['name']; ?>" data-description-spell="<?php echo $champ_spell_0['description']; ?>">
                     <div class="card champ-card-spells shadow-lg bg-secondary text-white" style="width: 100%; height: 100%;">
                         <div class="card-header champ-header">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_0['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
+                            <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_0['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
                         </div>
 
                         <div class="card-body champ-body">
@@ -308,7 +308,7 @@ if ($result !== false) {
                             <hr class="m-0 p-0">
 
                             <div class="text-center">
-                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_0['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_0['name']; ?>" data-description-spell="<?php echo $champ_spell_0['description']; ?>">Visualizar</button>
+                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_0['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_0['name']; ?>" data-description-spell="<?php echo $champ_spell_0['description']; ?>">Visualizar</button>
                             </div>
                         </div>
                     </div>
@@ -316,10 +316,10 @@ if ($result !== false) {
             </div>
 
             <div class="col-md-2 mb-4">
-                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_1['name']; ?>" data-description-spell="<?php echo $champ_spell_1['description']; ?>">
+                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_1['name']; ?>" data-description-spell="<?php echo $champ_spell_1['description']; ?>">
                     <div class="card champ-card-spells shadow-lg bg-secondary text-white" style="width: 100%; height: 100%;">
                         <div class="card-header champ-header">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
+                            <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
                         </div>
 
                         <div class="card-body champ-body">
@@ -328,7 +328,7 @@ if ($result !== false) {
                             <hr class="m-0 p-0">
 
                             <div class="text-center">
-                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_1['name']; ?>" data-description-spell="<?php echo $champ_spell_1['description']; ?>">Visualizar</button>
+                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_1['name']; ?>" data-description-spell="<?php echo $champ_spell_1['description']; ?>">Visualizar</button>
                             </div>
                         </div>
                     </div>
@@ -336,10 +336,10 @@ if ($result !== false) {
             </div>
 
             <div class="col-md-2 mb-4">
-                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_1['name']; ?>" data-description-spell="<?php echo $champ_spell_1['description']; ?>">
+                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_1['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_1['name']; ?>" data-description-spell="<?php echo $champ_spell_1['description']; ?>">
                     <div class="card champ-card-spells shadow-lg bg-secondary text-white" style="width: 100%; height: 100%;">
                         <div class="card-header champ-header">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_2['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
+                            <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_2['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
                         </div>
 
                         <div class="card-body champ-body">
@@ -348,7 +348,7 @@ if ($result !== false) {
                             <hr class="m-0 p-0">
 
                             <div class="text-center">
-                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_2['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_2['name']; ?>" data-description-spell="<?php echo $champ_spell_2['description']; ?>">Visualizar</button>
+                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_2['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_2['name']; ?>" data-description-spell="<?php echo $champ_spell_2['description']; ?>">Visualizar</button>
                             </div>
                         </div>
                     </div>
@@ -356,10 +356,10 @@ if ($result !== false) {
             </div>
 
             <div class="col-md-2 mb-4">
-                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_3['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_3['name']; ?>" data-description-spell="<?php echo $champ_spell_3['description']; ?>">
+                <a class="a_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_3['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_3['name']; ?>" data-description-spell="<?php echo $champ_spell_3['description']; ?>">
                     <div class="card champ-card-spells shadow-lg bg-secondary text-white" style="width: 100%; height: 100%;">
                         <div class="card-header champ-header">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_3['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
+                            <img src="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_3['image']['full']; ?>" class="card-img-top champ-image" alt="<?php echo $champ_name; ?>">
                         </div>
 
                         <div class="card-body champ-body">
@@ -368,7 +368,7 @@ if ($result !== false) {
                             <hr class="m-0 p-0">
 
                             <div class="text-center">
-                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.4.1/img/spell/<?php echo $champ_spell_3['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_3['name']; ?>" data-description-spell="<?php echo $champ_spell_3['description']; ?>">Visualizar</button>
+                                <button class="btn btn-primary m-3 btn_spells" data-spell="https://ddragon.leagueoflegends.com/cdn/14.18.1/img/spell/<?php echo $champ_spell_3['image']['full']; ?>" data-name-spell="<?php echo $champ_spell_3['name']; ?>" data-description-spell="<?php echo $champ_spell_3['description']; ?>">Visualizar</button>
                             </div>
                         </div>
                     </div>
